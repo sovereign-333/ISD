@@ -1,7 +1,6 @@
-{
+}
 "scripts": {
-  "build": "mkdir -p sovereign-empire && cp index.html sovereign-empire/index.html && tailwindcss -i ./global.css -o ./sovereign-empire/style.css --minify && esbuild ./irys-bridge.js --bundle --minify --outfile=./sovereign-empire/irys-bridge.min.js"
-
+  "build": "mkdir -p dist && cp index.html sovereign-empire/index.html && tailwindcss -i ./input.css -o ./dist/style.css --minify && esbuild ./irys-bridge.js --bundle --minify --outfile=./sovereign-empire/irys-bridge.min.js"
   },
   "dependencies": {
     "@irys/web-upload": "^0.0.3",
